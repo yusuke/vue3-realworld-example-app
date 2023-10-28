@@ -4,6 +4,7 @@
 
 
 
+
 Simply point your [API requests](https://github.com/gothinkster/realworld/tree/master/api) to `https://api.realworld.io/api` and you're good to go!
 
 ### Routing Guidelines
