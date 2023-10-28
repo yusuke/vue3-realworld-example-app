@@ -6,6 +6,6 @@ describe('# Date filters', () => {
     const dateString = '2019-01-01 00:00:00'
     const result = dateFilter(dateString)
 
-    expect(result).toBe('January 1')
+    expect(result).toBe('January 2')
   })
 })

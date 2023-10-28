@@ -35,6 +35,6 @@ describe('# ArticleDetail', () => {
     }))
     await server.waitForRequest('GET', '/api/articles/markdown-xss')
 
-    expect(container.querySelector('#article-content')).toMatchSnapshot()
+    expect(container.querySelector('#article')).toMatchSnapshot()
   })
 })

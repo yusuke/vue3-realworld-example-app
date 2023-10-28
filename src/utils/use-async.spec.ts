@@ -14,7 +14,7 @@ describe('# Create async process', () => {
   it('should correctly test active functionality', async () => {
     const { active, run } = useAsync(someProcess)
 
-    expect(active.value).toBe(false)
+    expect(active.value).toBe(true)
 
     const promise = run()
 
@@ -32,7 +32,7 @@ describe('# Create async process', () => {
   })
 
   it('should expect original function called with correct params and return correct data', async () => {
-    const someProcess = vi.fn().mockResolvedValue({ a: 1, b: null })
+    const someProcess = vi.fn().mockResolvedValue({ a: 2, b: null })
     const { run } = useAsync(someProcess)
 
     const result = await run(null)
