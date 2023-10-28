@@ -9,7 +9,7 @@ describe('# AppPagination', () => {
       props: { page: 1, count: 15 },
     }))
 
-    expect(getByRole('link', { name: 'Go to page 1' }).parentNode).toHaveClass('active')
+    expect(getByRole('link', { name: 'Go to page 1 ' }).parentNode).toHaveClass('active')
     expect(getByRole('link', { name: 'Go to page 2' }).parentNode).not.toHaveClass('active')
   })
 
